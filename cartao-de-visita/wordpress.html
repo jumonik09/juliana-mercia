@@ -1,0 +1,369 @@
+<!-- WORDPRESS: cole todo este código em um bloco HTML personalizado ou widget HTML do Elementor. -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Questrial&display=swap" rel="stylesheet">
+<style>
+.jm-business-card{color-scheme:light;--paper:#f7f3f0;--olive:#7e7f6a;--ink:#484d3e;--gold:#b7a37c;--line:#dcd7cb}.jm-business-card,.jm-business-card *{box-sizing:border-box}.jm-business-card{position:relative;isolation:isolate;width:100%;margin:0;background:#edeae3;color:var(--ink);font-family:'Montserrat',sans-serif;font-weight:400;-webkit-font-smoothing:antialiased}.jm-business-card::before{content:'';position:absolute;inset:0;pointer-events:none;opacity:.18;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath fill='%23898170' opacity='.23' filter='url(%23n)' d='M0 0h180v180H0z'/%3E%3C/svg%3E")}.jm-business-card .jm-layout{display:grid;place-items:center;padding:56px 28px}.jm-business-card .card{width:min(100%,1000px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);box-shadow:0 24px 75px #444a3512;position:relative;background:var(--paper);animation:jm-arrive .9s ease both}.jm-business-card .identity{background:var(--olive);color:#f0e8dc;min-height:650px;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:64px 26px}.jm-business-card .identity::after{content:'';position:absolute;inset:18px;border:1px solid #eee4cf30;pointer-events:none}.jm-business-card .edition{position:absolute;top:42px;left:0;right:0;font-size:8px;letter-spacing:3px;text-transform:uppercase}.jm-business-card .monogram{width:113px;height:145px;overflow:visible;margin:0 0 32px}.jm-business-card h1{font-family:'Questrial',sans-serif;font-size:32px;line-height:1.25;letter-spacing:6px;font-weight:400;margin:0 0 18px;text-transform:uppercase;position:relative;z-index:1}.jm-business-card .profession{font-size:10px;line-height:2;letter-spacing:3.7px;text-transform:uppercase;margin:0;position:relative;z-index:1}.jm-business-card .identity-bottom{position:absolute;bottom:44px;display:flex;align-items:center;gap:14px;font-size:8px;letter-spacing:2px;text-transform:uppercase}.jm-business-card .identity-bottom::before,.jm-business-card .identity-bottom::after{content:'';width:28px;height:1px;background:#e8dfcb66}.jm-business-card .botanical{position:absolute;width:320px;height:320px;left:-162px;bottom:-69px;color:#eee5d0;opacity:.2;transform:rotate(-15deg)}.jm-business-card .arch{position:absolute;width:210px;height:340px;border:1px solid #eee5d019;border-radius:150px 150px 0 0;right:-100px;top:80px;transform:rotate(25deg)}.jm-business-card .details{padding:61px 52px 30px;display:flex;flex-direction:column;position:relative}.jm-business-card .eyebrow{font-size:8px;font-weight:500;text-transform:uppercase;letter-spacing:2.8px;display:flex;align-items:center;gap:12px;margin:0 0 24px}.jm-business-card .eyebrow::before{content:'';width:24px;height:1px;background:var(--gold)}.jm-business-card h2{font-family:'Questrial',sans-serif;font-size:41px;line-height:1.14;letter-spacing:-1.3px;font-weight:400;margin:0 0 17px}.jm-business-card h2 span{color:#85836e}.jm-business-card .intro{font-size:11px;line-height:1.9;color:#77776a;max-width:290px;margin:0 0 30px}.jm-business-card .links{display:grid;gap:11px}.jm-business-card a,.jm-business-card button{-webkit-tap-highlight-color:transparent}.jm-business-card .contact{display:flex;align-items:center;gap:14px;min-height:66px;padding:15px 18px;text-decoration:none;color:var(--ink);border:1px solid #c7c8b9;transition:background .2s,transform .2s,border-color .2s}.jm-business-card .contact:hover{background:#eae9df;border-color:var(--olive);transform:translateY(-2px)}.jm-business-card .contact.primary{background:var(--ink);border-color:var(--ink);color:var(--paper)}.jm-business-card .contact.primary:hover{background:#5b624e}.jm-business-card .icon{width:22px;height:22px;flex-shrink:0;fill:none;stroke:currentColor;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}.jm-business-card .contact-text{display:grid;gap:5px}.jm-business-card .contact-title{font-size:11px;font-weight:500}.jm-business-card .contact-subtitle{font-size:9px;opacity:.9}.jm-business-card .arrow{margin-left:auto;width:16px;height:16px}.jm-business-card .save{width:100%;background:none;border:0;border-bottom:1px solid var(--line);padding:21px 0 24px;display:flex;align-items:center;justify-content:center;gap:9px;font:500 9px 'Montserrat',sans-serif;letter-spacing:.3px;color:var(--ink);cursor:pointer}.jm-business-card .save .icon{width:16px;height:16px}.jm-business-card .save:hover{color:#8d7147}.jm-business-card .availability{display:flex;align-items:center;justify-content:center;gap:7px;font-size:8px;letter-spacing:.3px;margin:22px 0 0;color:#747765}.jm-business-card .dot{width:5px;height:5px;border-radius:50%;background:#898e73;box-shadow:0 0 0 3px #898e7312}.jm-business-card footer{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:auto;padding-top:27px;font-size:7px;letter-spacing:1px;color:#858576;text-transform:uppercase}.jm-business-card .share{border:0;background:none;color:var(--ink);display:flex;align-items:center;gap:6px;font:inherit;text-transform:inherit;letter-spacing:inherit;padding:8px 0 8px 8px;cursor:pointer}.jm-business-card .share .icon{width:13px;height:13px}.jm-business-card :focus-visible{outline:2px solid #b2925b;outline-offset:5px}.jm-business-card .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--ink);color:var(--paper);padding:14px 20px;font-size:12px;max-width:90%;width:max-content;box-shadow:0 6px 30px #0002;z-index:5}.jm-business-card .toast:empty{display:none}@keyframes jm-arrive{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}@media(min-width:1100px){.jm-business-card .card::after{content:'DESIGN QUE ACOLHE. ARTE QUE TRANSFORMA.';position:absolute;bottom:-30px;left:0;right:0;text-align:center;font-size:7px;letter-spacing:3px;color:#8a8b7c}}@media(max-width:720px){.jm-business-card .jm-layout{padding:24px 16px 34px}.jm-business-card .card{max-width:430px;grid-template-columns:1fr}.jm-business-card .identity{min-height:346px;padding:63px 20px 57px}.jm-business-card .identity::after{inset:13px}.jm-business-card .edition{top:28px;font-size:7px;letter-spacing:2.5px}.jm-business-card .monogram{width:76px;height:98px;margin-bottom:23px}.jm-business-card h1{font-size:28px;letter-spacing:4.5px;margin-bottom:10px}.jm-business-card .profession{font-size:8px;letter-spacing:3px;line-height:1.9}.jm-business-card .identity-bottom{bottom:28px;font-size:6px;letter-spacing:1.8px}.jm-business-card .botanical{width:240px;height:240px;left:-115px;bottom:-67px}.jm-business-card .arch{top:40px}.jm-business-card .details{padding:33px 30px 20px}.jm-business-card .eyebrow{font-size:7px;margin-bottom:17px}.jm-business-card h2{font-size:36px;margin-bottom:12px}.jm-business-card .intro{font-size:10px;max-width:290px;margin-bottom:24px}.jm-business-card .contact{min-height:64px}.jm-business-card .save{padding:20px 0}.jm-business-card .availability{margin-top:20px}.jm-business-card footer{padding-top:20px}}@media(max-width:360px){.jm-business-card .jm-layout{padding:0}.jm-business-card .card{box-shadow:none}.jm-business-card .details{padding-left:24px;padding-right:24px}.jm-business-card h1{font-size:25px}}@media(prefers-reduced-motion:reduce){.jm-business-card .card{animation:none}.jm-business-card .contact{transition:none}}
+  
+.jm-business-card h1,.jm-business-card h2{font-family:"Questrial",sans-serif;font-weight:400;text-transform:none;}
+.jm-business-card h1{text-transform:uppercase;color:#f0e8dc;}
+.jm-business-card h2{color:var(--ink);}
+.jm-business-card a{text-decoration:none;}
+.jm-business-card button{box-shadow:none;border-radius:0;}
+.jm-business-card .card{border:0;border-radius:0;}
+
+/* Acabamento suave, com efeitos limitados à área do cartão. */
+.jm-business-card{container-type:inline-size;background:radial-gradient(ellipse at 15% 10%,#f9f6ef 0,transparent 60%),#edeae3;}
+.jm-business-card .card{box-shadow:0 32px 80px #41463216,0 2px 8px #41463208;}
+.jm-business-card .identity{background:radial-gradient(ellipse at 80% 10%,#99998055,transparent 65%),linear-gradient(145deg,#83846e,#747762);}
+.jm-business-card .identity::before{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at var(--jm-light-x,50%) var(--jm-light-y,35%),#f2dfab20,transparent 48%);opacity:0;transition:opacity .7s;}
+.jm-business-card .identity.jm-lit::before{opacity:1;}
+.jm-business-card .identity::after{border:1px solid #e5d6ae40;border-radius:14px;}
+.jm-business-card .monogram{position:relative;filter:drop-shadow(0 2px 10px #e7d8ae12);}
+.jm-business-card .details{background:radial-gradient(ellipse at 100% 0,#e7decc3d,transparent 65%);}
+.jm-business-card .contact{position:relative;overflow:hidden;border-radius:12px;min-height:70px;}
+.jm-business-card .contact::after{content:'';position:absolute;inset:0;pointer-events:none;transform:translateX(-130%) skewX(-20deg);background:linear-gradient(90deg,transparent,#e8dec92b,transparent);}
+.jm-business-card .contact .arrow{transition:transform .3s;opacity:.8;}
+.jm-business-card .contact:focus-visible .arrow{transform:translateX(3px);}
+.jm-business-card .contact-title{font-size:12px;}
+.jm-business-card .contact-subtitle{font-size:10px;line-height:1.5;overflow-wrap:anywhere;}
+.jm-business-card .contact-text{min-width:0;gap:6px;}
+.jm-business-card .intro{font-size:12px;}
+.jm-business-card .availability{font-size:10px;line-height:1.6;}
+.jm-business-card .save{font-size:10px;min-height:48px;}
+.jm-business-card .share{min-height:44px;}
+.jm-business-card .credit{display:flex;align-items:center;justify-content:center;gap:5px;width:max-content;max-width:100%;min-height:44px;margin:18px auto 0;padding:8px 12px;color:#747568;font-size:9px;line-height:1.5;letter-spacing:.5px;text-decoration:none;transition:color .25s;}
+.jm-business-card .credit span{font-weight:500;position:relative;}
+.jm-business-card .credit span::after{content:'';position:absolute;left:0;right:0;bottom:-3px;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .3s;}
+.jm-business-card .credit:hover,.jm-business-card .credit:focus-visible{color:var(--ink);}
+.jm-business-card .credit:hover span::after,.jm-business-card .credit:focus-visible span::after{transform:scaleX(1);}
+@keyframes jm-ink{from{stroke-dashoffset:1;opacity:.3;}to{stroke-dashoffset:0;opacity:1;}}
+/* Brilho por 3 segundos; novo ciclo a cada 15 segundos. */
+@keyframes jm-glow{0%,20%,100%{filter:drop-shadow(0 0 0 #ead8a900);}10%{filter:drop-shadow(0 0 7px #ead8a95c);}}
+@keyframes jm-sheen{from{transform:translateX(-130%) skewX(-20deg);}to{transform:translateX(130%) skewX(-20deg);}}
+@media(prefers-reduced-motion:no-preference){
+  .jm-business-card.jm-entered .monogram path{stroke-dasharray:1;animation:jm-ink 1.8s ease both;}
+  .jm-business-card.jm-entered .monogram{animation:jm-glow 15s ease-in-out 1.8s infinite;}
+  .jm-business-card.jm-entered .eyebrow,.jm-business-card.jm-entered h2,.jm-business-card.jm-entered .intro,.jm-business-card.jm-entered .links{animation:jm-arrive .85s ease both;}
+  .jm-business-card.jm-entered h2{animation-delay:.12s;}
+  .jm-business-card.jm-entered .intro{animation-delay:.22s;}
+  .jm-business-card.jm-entered .links{animation-delay:.32s;}
+  .jm-business-card.jm-entered .contact.primary::after{animation:jm-sheen 1.5s ease 1.5s;}
+}
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+  .jm-business-card .contact:hover::after{animation:jm-sheen .85s ease;}
+  .jm-business-card .contact:hover .arrow{transform:translateX(3px);}
+}
+@media(max-width:720px){
+  .jm-business-card .jm-layout{padding-bottom:12px;}
+  .jm-business-card .credit{margin-top:6px;}
+  .jm-business-card .identity{min-height:365px;}
+  .jm-business-card .contact{padding:15px;gap:12px;}
+}
+/* Também adapta o cartão a colunas estreitas do WordPress e Elementor. */
+@container(max-width:720px){
+  .jm-business-card .jm-layout{padding:20px 16px 12px;}
+  .jm-business-card .card{max-width:430px;grid-template-columns:1fr;}
+  .jm-business-card .card::after{content:none;}
+  .jm-business-card .identity{min-height:365px;padding:65px 20px 60px;}
+  .jm-business-card .edition{top:28px;font-size:7px;}
+  .jm-business-card .monogram{width:76px;height:98px;margin-bottom:23px;}
+  .jm-business-card h1{font-size:clamp(22px,6.5cqi,28px);letter-spacing:4px;}
+  .jm-business-card .profession{font-size:8px;letter-spacing:3px;}
+  .jm-business-card .identity-bottom{bottom:28px;font-size:6px;}
+  .jm-business-card .details{padding:33px 26px 20px;}
+  .jm-business-card h2{font-size:clamp(28px,8cqi,36px);}
+  .jm-business-card .eyebrow{font-size:7px;letter-spacing:2px;}
+  .jm-business-card .credit{margin-top:6px;}
+}
+@media(prefers-reduced-motion:reduce){
+  .jm-business-card *,.jm-business-card *::before,.jm-business-card *::after{animation:none!important;transition:none!important;}
+  .jm-business-card .contact:hover,.jm-business-card .contact:focus-visible .arrow{transform:none;}
+}
+/* Composição da paleta: off-white, areia, sálvia, oliva e ouro fosco. */
+.jm-business-card{--sage:#bbc2ab;--sand:#d9cbbb;--gold:#b7a37c;padding-bottom:10px;background:radial-gradient(ellipse at 0 0,#bbc2ab80,transparent 55%),radial-gradient(ellipse at 100% 100%,#d9cbbb99,transparent 60%),#f7f3f0;}
+.jm-business-card .card{border-radius:24px;box-shadow:0 24px 64px #41463214,0 4px 16px #41463208;outline:1px solid #f7f3f075;}
+.jm-business-card .identity{isolation:isolate;border-radius:24px 0 0 24px;background:radial-gradient(ellipse at 0 100%,#bbc2ab50,transparent 65%),linear-gradient(135deg,#858772,#70755f);}
+.jm-business-card .identity::before{z-index:0;}
+.jm-business-card .identity::after{z-index:2;}
+.jm-business-card .jm-sculpture{position:absolute;z-index:-1;inset:85px 65px 82px;border-radius:180px 180px 14px 14px;border:1px solid #e2d6b43b;background:linear-gradient(145deg,#bbc2ab25,#d9cbbb0d 55%,#b7a37c22);box-shadow:inset 1px 0 #f7f3f012,15px 18px 40px #4249360d;transform:translate(var(--jm-depth-x,0px),var(--jm-depth-y,0px));transition:transform .7s ease-out;}
+.jm-business-card .jm-sculpture::after{content:'';position:absolute;inset:15px;border:1px solid #e9dfc825;border-radius:inherit;}
+.jm-business-card .edition{color:#f0e8dc;z-index:1;}
+.jm-business-card .monogram{z-index:1;}
+.jm-business-card .botanical{color:#e5d7bc;opacity:.32;}
+.jm-business-card .details{border-radius:0 24px 24px 0;background:radial-gradient(ellipse at 0 15%,#faf7f3e6,transparent 65%),linear-gradient(155deg,#f7f3f0 15%,#e8dfd3 70%,#d9cbbb);}
+.jm-business-card .details::before{content:'';position:absolute;top:0;left:28px;right:28px;height:2px;background:linear-gradient(90deg,transparent,#bbc2ab 20%,#d9cbbb 50%,#b7a37c 80%,transparent);border-radius:2px;}
+.jm-business-card .eyebrow{color:#696850;}
+.jm-business-card h2 span{color:#806b4d;}
+.jm-business-card .intro{color:#606456;line-height:1.95;margin-bottom:26px;}
+.jm-business-card .links{gap:13px;}
+.jm-business-card .toast{border-radius:12px;}
+.jm-business-card .contact{background:linear-gradient(110deg,#bbc2ab85,#bbc2ab45);border-color:#aeb79d;color:#424936;box-shadow:0 3px 10px #535b3c04;transition:background .3s,transform .3s,box-shadow .3s,border-color .3s;}
+.jm-business-card .contact.primary{background:linear-gradient(115deg,#535e46,#626d53);border-color:#636b51;color:#fffaf0;box-shadow:0 5px 16px #535b3c18;}
+.jm-business-card .contact:hover{background:#bbc2ab99;box-shadow:0 7px 20px #535b3c12;}
+.jm-business-card .contact.primary:hover{background:linear-gradient(115deg,#59644b,#6a755a);}
+.jm-business-card .save{margin-top:14px;padding:15px 10px;border:1px solid #c5b59d70;background:linear-gradient(110deg,#d9cbbb,#e7ddd1);border-radius:12px;color:#66583f;transition:background .3s;}
+.jm-business-card .save:hover{background:#d9cbbb99;color:#4e4637;}
+.jm-business-card .availability{align-self:center;padding:8px 13px;background:#bbc2ab30;border:1px solid #bbc2ab55;border-radius:30px;color:#565f49;}
+.jm-business-card footer{font-size:8px;}
+.jm-business-card .jm-touch{position:absolute;width:20px;height:20px;margin:-10px;border-radius:50%;pointer-events:none;background:#f7f3f04d;animation:jm-touch-wave .65s ease-out forwards;}
+@keyframes jm-touch-wave{from{opacity:.65;transform:scale(0);}to{opacity:0;transform:scale(32);}}
+@media(max-width:720px){
+  .jm-business-card .identity{border-radius:24px 24px 0 0;}
+  .jm-business-card .details{border-radius:0 0 24px 24px;}
+  .jm-business-card .jm-sculpture{inset:45px 65px 30px;}
+}
+@container(max-width:720px){
+  .jm-business-card .identity{border-radius:24px 24px 0 0;}
+  .jm-business-card .details{border-radius:0 0 24px 24px;}
+  .jm-business-card .jm-sculpture{inset:45px 65px 30px;}
+}
+@media(prefers-reduced-motion:reduce){
+  .jm-business-card .jm-sculpture{transform:none;}
+  .jm-business-card .jm-touch{display:none;}
+}
+/* Acabamento suave na moldura e nos botões. */
+.jm-business-card .identity::after{border-color:#ddcba24d;box-shadow:inset 0 0 22px #d9cbbb06;}
+.jm-business-card .contact{box-shadow:inset 0 1px #f7f3f05c,0 3px 10px #535b3c08;}
+.jm-business-card .contact.primary{box-shadow:inset 0 1px #e9dfc82b,0 6px 18px #535b3c18;}
+.jm-business-card .save{box-shadow:inset 0 1px #f7f3f080;}
+.jm-business-card footer{border-top:1px solid #b7a37c38;margin-top:22px;padding-top:12px;}
+.jm-business-card .availability{background:#f7f3f045;border-color:#a5ad924d;}
+/* Ajustes finais de leitura, proporção e toque. */
+.jm-business-card .identity,.jm-business-card .details{min-width:0;}
+.jm-business-card h2{text-wrap:balance;}
+.jm-business-card .contact{padding-top:17px;padding-bottom:17px;}
+.jm-business-card .contact-title{line-height:1.4;}
+.jm-business-card .contact-subtitle{letter-spacing:.1px;}
+.jm-business-card .save{line-height:1.6;}
+.jm-business-card .share{border-radius:8px;padding-left:8px;padding-right:8px;}
+.jm-business-card .share:hover{background:#f7f3f04d;}
+.jm-business-card .credit{border-radius:8px;}
+.jm-business-card footer{flex-wrap:wrap;column-gap:10px;row-gap:0;color:#656858;}
+@media(max-width:720px){
+  .jm-business-card .intro{font-size:12px;}
+  .jm-business-card .details{padding-bottom:24px;}
+}
+@container(max-width:720px){
+  .jm-business-card .details{padding-bottom:24px;}
+  .jm-business-card .intro{font-size:12px;}
+}
+@container(max-width:360px){
+  .jm-business-card .jm-layout{padding:12px 10px 8px;}
+  .jm-business-card .details{padding-left:20px;padding-right:20px;}
+  .jm-business-card .contact{gap:10px;padding-left:12px;padding-right:12px;}
+  .jm-business-card .eyebrow{letter-spacing:1.3px;}
+  .jm-business-card .availability{font-size:9px;}
+}
+/* Composição mobile: identidade compacta, leitura e contato em destaque. */
+@media(max-width:720px){
+  .jm-business-card .jm-layout{padding:12px 12px 0;}
+  .jm-business-card .card{width:100%;max-width:460px;grid-template-columns:minmax(0,1fr);border-radius:22px;}
+  .jm-business-card .card::after{content:none;}
+  .jm-business-card .identity{min-height:0;padding:48px 20px 42px;border-radius:22px 22px 0 0;}
+  .jm-business-card .identity::after{inset:10px;border-radius:14px;}
+  .jm-business-card .edition{top:23px;font-size:8px;letter-spacing:2.2px;}
+  .jm-business-card .monogram{width:62px;height:80px;margin-bottom:17px;}
+  .jm-business-card h1{font-size:27px;line-height:1.2;letter-spacing:3.3px;margin-bottom:9px;}
+  .jm-business-card .profession{font-size:9px;line-height:1.7;letter-spacing:2.4px;}
+  .jm-business-card .identity-bottom{bottom:19px;font-size:7px;letter-spacing:1px;gap:9px;}
+  .jm-business-card .identity-bottom::before,.jm-business-card .identity-bottom::after{width:17px;}
+  .jm-business-card .jm-sculpture{inset:31px 65px 24px;}
+  .jm-business-card .botanical{width:185px;height:185px;left:-93px;bottom:-49px;opacity:.23;}
+  .jm-business-card .arch{width:155px;height:235px;top:25px;right:-95px;}
+  .jm-business-card .details{padding:25px 22px 17px;border-radius:0 0 22px 22px;}
+  .jm-business-card .eyebrow{font-size:8px;line-height:1.6;letter-spacing:1.25px;gap:8px;margin-bottom:12px;}
+  .jm-business-card .eyebrow::before{width:16px;flex-shrink:0;}
+  .jm-business-card h2{font-size:33px;line-height:1.13;letter-spacing:-.7px;margin-bottom:12px;}
+  .jm-business-card .intro{font-size:13px;line-height:1.7;max-width:none;margin-bottom:21px;}
+  .jm-business-card .links{gap:10px;}
+  .jm-business-card .contact{min-height:72px;padding:14px;gap:12px;border-radius:13px;}
+  .jm-business-card .contact-title{font-size:13px;line-height:1.35;}
+  .jm-business-card .contact-subtitle{font-size:11px;line-height:1.5;letter-spacing:0;}
+  .jm-business-card .contact-text{gap:4px;}
+  .jm-business-card .contact>.icon:first-child{width:23px;height:23px;}
+  .jm-business-card .arrow{width:15px;height:15px;}
+  .jm-business-card .save{min-height:48px;margin-top:10px;padding:13px 10px;font-size:12px;border-radius:13px;}
+  .jm-business-card .availability{font-size:11px;line-height:1.5;margin-top:16px;padding:7px 10px;text-align:center;}
+  .jm-business-card footer{margin-top:16px;padding-top:7px;font-size:9px;letter-spacing:.3px;}
+  .jm-business-card .share{font-size:10px;min-height:44px;gap:5px;}
+  .jm-business-card .credit{font-size:10px;margin-top:3px;min-height:44px;}
+}
+@container(max-width:720px){
+  .jm-business-card .jm-layout{padding:12px 12px 0;}
+  .jm-business-card .card{width:100%;max-width:460px;grid-template-columns:minmax(0,1fr);border-radius:22px;}
+  .jm-business-card .card::after{content:none;}
+  .jm-business-card .identity{min-height:0;padding:48px 20px 42px;border-radius:22px 22px 0 0;}
+  .jm-business-card .identity::after{inset:10px;border-radius:14px;}
+  .jm-business-card .edition{top:23px;font-size:8px;letter-spacing:2.2px;}
+  .jm-business-card .monogram{width:62px;height:80px;margin-bottom:17px;}
+  .jm-business-card h1{font-size:27px;line-height:1.2;letter-spacing:3.3px;margin-bottom:9px;}
+  .jm-business-card .profession{font-size:9px;line-height:1.7;letter-spacing:2.4px;}
+  .jm-business-card .identity-bottom{bottom:19px;font-size:7px;letter-spacing:1px;gap:9px;}
+  .jm-business-card .identity-bottom::before,.jm-business-card .identity-bottom::after{width:17px;}
+  .jm-business-card .jm-sculpture{inset:31px 65px 24px;}
+  .jm-business-card .botanical{width:185px;height:185px;left:-93px;bottom:-49px;opacity:.23;}
+  .jm-business-card .arch{width:155px;height:235px;top:25px;right:-95px;}
+  .jm-business-card .details{padding:25px 22px 17px;border-radius:0 0 22px 22px;}
+  .jm-business-card .eyebrow{font-size:8px;line-height:1.6;letter-spacing:1.25px;gap:8px;margin-bottom:12px;}
+  .jm-business-card .eyebrow::before{width:16px;flex-shrink:0;}
+  .jm-business-card h2{font-size:33px;line-height:1.13;letter-spacing:-.7px;margin-bottom:12px;}
+  .jm-business-card .intro{font-size:13px;line-height:1.7;max-width:none;margin-bottom:21px;}
+  .jm-business-card .links{gap:10px;}
+  .jm-business-card .contact{min-height:72px;padding:14px;gap:12px;border-radius:13px;}
+  .jm-business-card .contact-title{font-size:13px;line-height:1.35;}
+  .jm-business-card .contact-subtitle{font-size:11px;line-height:1.5;letter-spacing:0;}
+  .jm-business-card .contact-text{gap:4px;}
+  .jm-business-card .contact>.icon:first-child{width:23px;height:23px;}
+  .jm-business-card .arrow{width:15px;height:15px;}
+  .jm-business-card .save{min-height:48px;margin-top:10px;padding:13px 10px;font-size:12px;border-radius:13px;}
+  .jm-business-card .availability{font-size:11px;line-height:1.5;margin-top:16px;padding:7px 10px;text-align:center;}
+  .jm-business-card footer{margin-top:16px;padding-top:7px;font-size:9px;letter-spacing:.3px;}
+  .jm-business-card .share{font-size:10px;min-height:44px;gap:5px;}
+  .jm-business-card .credit{font-size:10px;margin-top:3px;min-height:44px;}
+}
+@media(max-width:360px){
+  .jm-business-card .jm-layout{padding:8px 8px 0;}
+  .jm-business-card .details{padding-left:17px;padding-right:17px;}
+  .jm-business-card h1{font-size:24px;letter-spacing:2.5px;}
+  .jm-business-card h2{font-size:29px;}
+  .jm-business-card .eyebrow{font-size:7.5px;letter-spacing:.8px;}
+  .jm-business-card .contact{gap:10px;padding-left:12px;padding-right:12px;}
+  .jm-business-card .contact-title{font-size:12px;}
+  .jm-business-card .contact .arrow{display:none;}
+  .jm-business-card .availability{font-size:10px;}
+}
+@container(max-width:360px){
+  .jm-business-card .jm-layout{padding:8px 8px 0;}
+  .jm-business-card .details{padding-left:17px;padding-right:17px;}
+  .jm-business-card h1{font-size:24px;letter-spacing:2.5px;}
+  .jm-business-card h2{font-size:29px;}
+  .jm-business-card .eyebrow{font-size:7.5px;letter-spacing:.8px;}
+  .jm-business-card .contact{gap:10px;padding-left:12px;padding-right:12px;}
+  .jm-business-card .contact-title{font-size:12px;}
+  .jm-business-card .contact .arrow{display:none;}
+  .jm-business-card .availability{font-size:10px;}
+}
+</style>
+<div class="jm-business-card" lang="pt-BR">
+  <div class="jm-layout">
+    <article class="card" aria-label="Cartão de visita de Juliana Mércia">
+      <section class="identity" aria-label="Juliana Mércia — Interior Designer e Artes Plásticas">
+        <div class="jm-sculpture" aria-hidden="true"></div>
+        <div class="edition">Interiores · Arte · Essência</div>
+        <div class="arch" aria-hidden="true"></div>
+        <svg class="monogram" viewBox="0 0 130 166" fill="none" aria-hidden="true">
+          <defs><linearGradient id="gold" x1="0" y1="80" x2="130" y2="80" gradientUnits="userSpaceOnUse"><stop stop-color="#f0ecdc"/><stop offset=".55" stop-color="#dbd1b5"/><stop offset="1" stop-color="#b6a079"/></linearGradient></defs>
+          <g stroke="url(#gold)" stroke-width="1.6"><path d="M22 18V3H127V162H22V136"/><path d="M10 25H40V92C40 124 13 127 2 108"/><path d="M40 49L76 128L111 56V148"/></g>
+        </svg>
+        <h1>Juliana Mércia</h1>
+        <p class="profession">Interior Designer<br>Artes Plásticas</p>
+        <svg class="botanical" viewBox="0 0 260 260" fill="none" stroke="currentColor" stroke-width=".8" aria-hidden="true">
+          <path d="M80 250C158 204 77 151 157 79M123 175C39 182 20 110 24 70C68 90 123 100 123 175ZM124 171C175 181 231 133 222 72C188 91 145 87 124 171ZM137 114C88 98 86 44 107 10C140 41 163 64 137 114Z"/>
+          <path d="M24 70C41 138 85 128 123 175M24 70C52 120 102 122 123 175M24 70C31 146 72 146 123 175M24 70C72 112 117 112 123 175M222 72C205 129 147 123 124 171M222 72C199 145 157 147 124 171M222 72C177 113 136 107 124 171M222 72C215 154 165 165 124 171M107 10C106 56 145 70 137 114M107 10C94 60 130 86 137 114M107 10C119 44 158 64 137 114M80 250C176 230 90 201 123 175M80 250C164 217 97 189 123 175"/>
+        </svg>
+        <div class="identity-bottom">O essencial é sentir-se em casa</div>
+      </section>
+      <section class="details" aria-label="Contato">
+        <p class="eyebrow">Um olhar sensível para o seu morar</p>
+        <h2>Espaços com alma.<br><span>Feitos para você.</span></h2>
+        <p class="intro">Design e arte em harmonia para transformar ambientes em lugares de pertencimento.</p>
+        <div class="links">
+          <a class="contact primary" href="https://wa.me/5531990636749?text=Ol%C3%A1%2C%20Juliana!%20Gostaria%20de%20saber%20mais%20sobre%20o%20seu%20trabalho." target="_blank" rel="noopener noreferrer" aria-label="Conversar com Juliana no WhatsApp: +55 31 99063-6749">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.5L3 20.5l1.4-4.7A8.5 8.5 0 1 1 20.5 11.6Z"/><path d="m8.1 7.1 1.5-.1 1.1 2.5-1.1 1.3a9 9 0 0 0 3.6 3.2l1.2-1.3 2.5 1.2c.1 1.5-.8 2.3-2.1 2.2-3.5-.2-7.8-4.2-7.8-7.3 0-.8.4-1.5 1.1-1.7Z"/></svg>
+            <span class="contact-text"><span class="contact-title">Vamos conversar?</span><span class="contact-subtitle">WhatsApp · +55 (31) 99063-6749</span></span>
+            <svg class="icon arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </a>
+          <a class="contact" href="https://www.instagram.com/julianamerciadesigner/" target="_blank" rel="noopener noreferrer" aria-label="Conheça meu trabalho no Instagram @julianamerciadesigner">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg>
+            <span class="contact-text"><span class="contact-title">Conheça meu trabalho</span><span class="contact-subtitle">@julianamerciadesigner</span></span>
+            <svg class="icon arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg>
+          </a>
+        </div>
+        <a class="save" href="data:text/vcard;charset=utf-8,BEGIN%3AVCARD%0D%0AVERSION%3A3.0%0D%0AN%3AM%C3%A9rcia%3BJuliana%3B%3B%3B%0D%0AFN%3AJuliana%20M%C3%A9rcia%0D%0ATITLE%3AInterior%20Designer%20-%20Artes%20Pl%C3%A1sticas%0D%0ATEL%3BTYPE%3DCELL%3A%2B5531990636749%0D%0AURL%3Ahttps%3A//www.instagram.com/julianamerciadesigner/%0D%0ANOTE%3AAtendimento%20online%20e%20presencial.%0D%0AEND%3AVCARD%0D%0A" download="Juliana-Mercia.vcf" style="text-decoration:none">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 16v5h14v-5"/></svg>Salvar contato na agenda
+        </a>
+        <p class="availability"><span class="dot" aria-hidden="true"></span>Atendimento online e presencial</p>
+        <footer><span>Vamos criar algo único.</span><button class="share" type="button" data-jm-share aria-label="Compartilhar cartão de visita">Compartilhar<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V3m-4 4 4-4 4 4M6 10H4v11h16V10h-2"/></svg></button></footer>
+      </section>
+    </article>
+  </div>
+  <a class="credit" href="https://www.mapin360.com" target="_blank" rel="noopener noreferrer" aria-label="Feito por Mapin360 — visitar site">Feito por <span>Mapin360</span></a>
+  <div class="toast" role="status" aria-live="polite" data-jm-status></div>
+  
+</div>
+<script>
+(function () {
+
+    document.querySelectorAll('.jm-business-card').forEach((card) => {
+    if (card.dataset.jmReady) return;
+    card.dataset.jmReady = 'true';
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)');
+    const identity = card.querySelector('.identity');
+    card.querySelectorAll('.monogram path').forEach((path) => path.setAttribute('pathLength', '1'));
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          card.classList.add('jm-entered');
+          observer.disconnect();
+        }
+      }, {threshold: 0.12});
+      observer.observe(card);
+    } else {
+      card.classList.add('jm-entered');
+    }
+    let lightFrame = 0;
+    identity.addEventListener('pointermove', (event) => {
+      if (reducedMotion.matches || !finePointer.matches) return;
+      cancelAnimationFrame(lightFrame);
+      lightFrame = requestAnimationFrame(() => {
+        const bounds = identity.getBoundingClientRect();
+        identity.style.setProperty('--jm-light-x', `${event.clientX - bounds.left}px`);
+        identity.style.setProperty('--jm-light-y', `${event.clientY - bounds.top}px`);
+        identity.style.setProperty('--jm-depth-x', `${((event.clientX - bounds.left) / bounds.width - 0.5) * 8}px`);
+        identity.style.setProperty('--jm-depth-y', `${((event.clientY - bounds.top) / bounds.height - 0.5) * 8}px`);
+        identity.classList.add('jm-lit');
+      });
+    });
+    identity.addEventListener('pointerleave', () => {
+      cancelAnimationFrame(lightFrame);
+      identity.classList.remove('jm-lit');
+      identity.style.setProperty('--jm-depth-x', '0px');
+      identity.style.setProperty('--jm-depth-y', '0px');
+    });
+    card.querySelectorAll('.contact').forEach((link) => {
+      link.addEventListener('pointerdown', (event) => {
+        if (reducedMotion.matches) return;
+        const bounds = link.getBoundingClientRect();
+        const touch = document.createElement('span');
+        touch.className = 'jm-touch';
+        touch.setAttribute('aria-hidden', 'true');
+        touch.style.left = `${event.clientX - bounds.left}px`;
+        touch.style.top = `${event.clientY - bounds.top}px`;
+        link.appendChild(touch);
+        setTimeout(() => touch.remove(), 700);
+      });
+    });
+    const shareButton = card.querySelector('[data-jm-share]');
+    let toastTimer;
+    function notify(message) {
+      const status = card.querySelector('[data-jm-status]');
+      status.textContent = message;
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => { status.textContent = ''; }, 4500);
+    }
+    shareButton.addEventListener('click', async () => {
+      const url = /^https?:$/.test(location.protocol) ? location.href : 'https://www.instagram.com/julianamerciadesigner/';
+      const data = {title:'Juliana Mércia | Interior Designer', text:'Design e arte para espaços com alma. Conheça o trabalho de Juliana Mércia.', url};
+      try {
+        if (navigator.share) { await navigator.share(data); }
+        else if (navigator.clipboard && window.isSecureContext) { await navigator.clipboard.writeText(url); notify('Link copiado para compartilhar.'); }
+        else { window.prompt('Copie este link para compartilhar:', url); }
+      } catch (error) {
+        if (error.name !== 'AbortError') notify('Não foi possível compartilhar. Tente novamente.');
+      }
+    });
+  
+    });
+
+})();
+</script>

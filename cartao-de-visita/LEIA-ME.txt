@@ -1,0 +1,17 @@
+WORDPRESS — CARTÃO JULIANA MÉRCIA
+
+1. Abra wordpress.html em um editor de texto e copie todo o conteúdo.
+2. No WordPress, adicione um bloco HTML personalizado e cole o código. No Elementor, use o widget HTML.
+3. Use um modelo de página de largura total, se disponível.
+4. Atualize a página e visualize a página publicada para testar os botões.
+
+O código inclui HTML, CSS e JavaScript. Não precisa de bibliotecas. As fontes Questrial e Montserrat são carregadas pelo Google Fonts. O contato está incorporado ao código.
+
+O WordPress precisa permitir tags script para sua conta. Se o editor remover o JavaScript, um administrador deverá inseri-lo por um plugin de snippets. WhatsApp, Instagram e download do contato funcionam sem JavaScript.
+
+O compartilhamento usa o link da página publicada; em dispositivos compatíveis abre o compartilhamento nativo e nos demais copia o link.
+
+VISUAL ATUALIZADO
+Monograma com traçado animado, entrada suave e brilho nos botões. No computador, a iluminação acompanha o cursor. As animações respeitam a preferência por movimento reduzido. Inclui crédito discreto e clicável para https://www.mapin360.com.
+
+Abra index.html para visualizar o cartão. Para WordPress, copie apenas o conteúdo de wordpress.html.
