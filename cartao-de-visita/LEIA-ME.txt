@@ -5,13 +5,20 @@ WORDPRESS — CARTÃO JULIANA MÉRCIA
 3. Use um modelo de página de largura total, se disponível.
 4. Atualize a página e visualize a página publicada para testar os botões.
 
-O código inclui HTML, CSS e JavaScript. Não precisa de bibliotecas. As fontes Questrial e Montserrat são carregadas pelo Google Fonts. O contato está incorporado ao código.
+O código inclui HTML, CSS e JavaScript. Não precisa de bibliotecas. As fontes Questrial Regular e Montserrat são carregadas pelo Google Fonts. O contato está incorporado ao código.
 
 O WordPress precisa permitir tags script para sua conta. Se o editor remover o JavaScript, um administrador deverá inseri-lo por um plugin de snippets. WhatsApp, Instagram e download do contato funcionam sem JavaScript.
 
 O compartilhamento usa o link da página publicada; em dispositivos compatíveis abre o compartilhamento nativo e nos demais copia o link.
 
 VISUAL ATUALIZADO
-Monograma com traçado animado, entrada suave e brilho nos botões. No computador, a iluminação acompanha o cursor. As animações respeitam a preferência por movimento reduzido. Inclui crédito discreto e clicável para https://www.mapin360.com.
+Seis fotos: dois retratos e quatro fotografias de obras e processo criativo. Questrial Regular nos títulos e Montserrat nos textos. Cartão, botões e fotos arredondados, com paleta de oliva e marfim. Layout em duas colunas no computador e uma coluna no celular, incluindo colunas estreitas do Elementor. Respeita a preferência por movimento reduzido.
 
-Abra index.html para visualizar o cartão. Para WordPress, copie apenas o conteúdo de wordpress.html.
+Abra index.html para visualizar o cartão. Ao publicar a versão independente, envie também a pasta assets junto do index.html. As fotos originais foram preservadas.
+Para WordPress, copie o conteúdo de wordpress.html: as seis fotos estão incorporadas ao HTML, sem depender de caminhos locais. O editor precisa permitir imagens em data URLs; se removê-las, envie as fotos da pasta assets à Biblioteca de Mídia e substitua os atributos src e os links href das imagens pelas URLs publicadas.
+
+GALERIA DE ARTES
+As quatro fotos de obras e processo criativo abrem uma galeria com navegação por botões ou setas do teclado. Feche com Escape, pelo botão de fechar ou clicando fora. Sem JavaScript, os links abrem as imagens. Há desenho e brilho suave do monograma, entrada da seção de artes, aproximação discreta das fotos ao passar o mouse e abertura suave da galeria. Os efeitos respeitam a preferência por movimento reduzido.
+
+NOVAS FOTOS E BRILHO DA LOGO
+Galeria com tela em tons naturais, Juliana junto às obras, pincelada e paleta com espátula. O monograma ganha um brilho dourado de 2,6 segundos após começar seu desenho, uma vez ao entrar na tela. Sem flashes ou repetição contínua; respeita movimento reduzido.
