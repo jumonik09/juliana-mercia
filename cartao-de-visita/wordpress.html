@@ -239,17 +239,23 @@
 @container(max-width:760px){.jm-business-card .brand{grid-template-columns:36px minmax(0,max-content);column-gap:15px}.jm-business-card .brand .monogram{width:36px;height:46px}}
 @container(max-width:360px){.jm-business-card .brand{column-gap:12px}}
 
-/* Refinamento de proporção e interação, preservando a composição. */
-.jm-business-card .card{gap:12px;box-shadow:0 18px 52px #46513f12}
+/* Acabamento final: hierarquia leve, contatos legíveis e ritmo de espaçamento. */
+.jm-business-card .card{gap:16px;box-shadow:0 20px 60px #46513f12}
 .jm-business-card .brand{margin-bottom:28px}
-.jm-business-card .details{padding:30px 28px 14px}
-.jm-business-card h2{line-height:1.18;text-wrap:balance}
-.jm-business-card .intro{line-height:1.85;color:#626b5a;margin-bottom:24px}
-.jm-business-card .art-section{margin-bottom:26px}
+.jm-business-card .details{padding:34px 28px 16px}
+.jm-business-card h2{font-size:36px;line-height:1.16;letter-spacing:-.5px;text-wrap:balance;margin-bottom:18px}
+.jm-business-card h2 span{display:inline-block;margin-top:7px;font-size:.82em;line-height:1.3;color:#81775f}
+.jm-business-card .intro{line-height:1.9;color:#626b5a;margin-bottom:28px}
+.jm-business-card .art-section{margin-bottom:28px}
 .jm-business-card .art-gallery{gap:12px}
 .jm-business-card .art-photo{overflow:hidden}
 .jm-business-card .art-photo img{transition:filter .35s ease,transform .55s ease}
-.jm-business-card .contact{transition:background .25s,border-color .25s,transform .25s;border-color:#d5d9ca}
+.jm-business-card .links{gap:10px}
+.jm-business-card .contact{min-height:70px;padding:15px 16px;border-radius:14px;transition:background .25s,border-color .25s,transform .25s;border-color:#dedfd4}
+.jm-business-card .contact-title{font-size:12px;line-height:1.5}
+.jm-business-card .contact-subtitle{font-size:11px;line-height:1.6;color:#626b5a}
+.jm-business-card .contact.primary .contact-subtitle{color:#f1f0e7}
+.jm-business-card .contact:not(.primary)>.icon:first-child{color:#758067}
 .jm-business-card .contact .arrow{transition:transform .25s;opacity:.8}
 .jm-business-card .save{margin-top:10px;min-height:48px}
 .jm-business-card .availability{margin:16px 0 20px}
@@ -262,9 +268,9 @@
 .jm-business-card .art-photo:hover img{transform:scale(1.035);filter:brightness(1.025)}
 .jm-business-card .contact:hover .arrow{transform:translateX(3px)}
 }
-@media(max-width:760px){.jm-business-card .card{gap:0}.jm-business-card .brand{margin-bottom:23px}.jm-business-card .details{padding:28px 19px 12px}}
-@container(max-width:760px){.jm-business-card .card{gap:0}.jm-business-card .brand{margin-bottom:23px}.jm-business-card .details{padding:28px 19px 12px}}
-@container(max-width:360px){.jm-business-card .details{padding-left:12px;padding-right:12px}.jm-business-card .art-gallery{gap:10px}}
+@media(max-width:760px){.jm-business-card .card{gap:0}.jm-business-card .brand{margin-bottom:23px}.jm-business-card .details{padding:30px 19px 14px}.jm-business-card h2{font-size:33px}}
+@container(max-width:760px){.jm-business-card .card{gap:0}.jm-business-card .brand{margin-bottom:23px}.jm-business-card .details{padding:30px 19px 14px}.jm-business-card h2{font-size:33px}}
+@container(max-width:360px){.jm-business-card .details{padding-left:12px;padding-right:12px}.jm-business-card .art-gallery{gap:10px}.jm-business-card h2{font-size:30px}.jm-business-card .contact{padding:14px 12px;gap:10px}}
 @media(prefers-reduced-motion:reduce){.jm-business-card .art-photo img,.jm-business-card .contact,.jm-business-card .contact .arrow,.jm-business-card .share{transition:none}}
 </style>
 <div class="jm-business-card" lang="pt-BR">
@@ -287,7 +293,7 @@
         </div>
       </section>
       <section class="details" aria-label="Contato">
-        <h2>Espaços com alma.<br><span>Feitos para você.</span></h2>
+        <h2>Espaços com significado.<br><span>Feitos para você.</span></h2>
         <p class="intro">Design e arte criando espaços que acolhem.</p>
         <section class="art-section" aria-label="Artes e processo criativo">
           <div class="art-gallery">
@@ -311,13 +317,18 @@
             <span class="contact-text"><span class="contact-title">Vamos conversar?</span><span class="contact-subtitle">WhatsApp · +55 (31) 99063-6749</span></span>
             <svg class="icon arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
           </a>
+          <a class="contact" href="mailto:julianamercia@icloud.com" aria-label="Enviar e-mail para Juliana: julianamercia@icloud.com">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 6 9 7 9-7"></path></svg>
+            <span class="contact-text"><span class="contact-title">Escreva para mim</span><span class="contact-subtitle">julianamercia@icloud.com</span></span>
+            <svg class="icon arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"></path></svg>
+          </a>
           <a class="contact" href="https://www.instagram.com/julianamerciadesigner/" target="_blank" rel="noopener noreferrer" aria-label="Conheça meu trabalho no Instagram @julianamerciadesigner">
             <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg>
             <span class="contact-text"><span class="contact-title">Conheça meu trabalho</span><span class="contact-subtitle">@julianamerciadesigner</span></span>
             <svg class="icon arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg>
           </a>
         </div>
-        <a class="save" href="data:text/vcard;charset=utf-8,BEGIN%3AVCARD%0D%0AVERSION%3A3.0%0D%0AN%3AM%C3%A9rcia%3BJuliana%3B%3B%3B%0D%0AFN%3AJuliana%20M%C3%A9rcia%0D%0ATITLE%3AInterior%20Designer%20-%20Artes%20Pl%C3%A1sticas%0D%0ATEL%3BTYPE%3DCELL%3A%2B5531990636749%0D%0AURL%3Ahttps%3A//www.instagram.com/julianamerciadesigner/%0D%0ANOTE%3AAtendimento%20online%20e%20presencial.%0D%0AEND%3AVCARD%0D%0A" download="Juliana-Mercia.vcf" style="text-decoration:none">
+        <a class="save" href="data:text/vcard;charset=utf-8,BEGIN%3AVCARD%0D%0AVERSION%3A3.0%0D%0AN%3AM%C3%A9rcia%3BJuliana%3B%3B%3B%0D%0AFN%3AJuliana%20M%C3%A9rcia%0D%0ATITLE%3AInterior%20Designer%20-%20Artes%20Pl%C3%A1sticas%0D%0ATEL%3BTYPE%3DCELL%3A%2B5531990636749%0D%0AEMAIL%3BTYPE%3DINTERNET%3Ajulianamercia%40icloud.com%0D%0AURL%3Ahttps%3A//www.instagram.com/julianamerciadesigner/%0D%0ANOTE%3AAtendimento%20online%20e%20presencial.%0D%0AEND%3AVCARD%0D%0A" download="Juliana-Mercia.vcf" style="text-decoration:none">
           <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 16v5h14v-5"/></svg>Salvar contato na agenda
         </a>
         <p class="availability"><span class="dot" aria-hidden="true"></span>Atendimento online e presencial</p>
@@ -419,7 +430,7 @@
     }
     shareButton.addEventListener('click', async () => {
       const url = /^https?:$/.test(location.protocol) ? location.href : 'https://www.instagram.com/julianamerciadesigner/';
-      const data = {title:'Juliana Mércia | Interior Designer', text:'Design e arte para espaços com alma. Conheça o trabalho de Juliana Mércia.', url};
+      const data = {title:'Juliana Mércia | Interior Designer', text:'Design e arte para espaços com significado. Conheça o trabalho de Juliana Mércia.', url};
       try {
         if (navigator.share) { await navigator.share(data); }
         else if (navigator.clipboard && window.isSecureContext) { await navigator.clipboard.writeText(url); notify('Link copiado para compartilhar.'); }
