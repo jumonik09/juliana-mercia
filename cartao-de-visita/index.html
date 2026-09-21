@@ -282,6 +282,129 @@
 @container(max-width:760px){.jm-business-card .card{gap:0}.jm-business-card .brand{margin-bottom:23px}.jm-business-card .details{padding:30px 19px 14px}.jm-business-card h2{font-size:33px}}
 @container(max-width:360px){.jm-business-card .details{padding-left:12px;padding-right:12px}.jm-business-card .art-gallery{gap:10px}.jm-business-card h2{font-size:30px}.jm-business-card .contact{padding:14px 12px;gap:10px}}
 @media(prefers-reduced-motion:reduce){.jm-business-card .art-photo img,.jm-business-card .contact,.jm-business-card .contact .arrow,.jm-business-card .share{transition:none}}
+
+/* Fotografias com molduras suaves e proporções estáveis em notebook e celular. */
+.jm-business-card .card{gap:20px;padding:16px;border-radius:32px}
+.jm-business-card .identity{padding:24px;border-radius:24px;justify-content:center}
+.jm-business-card .photo-composition{flex:none;height:auto;min-height:0;border-radius:22px;overflow:hidden;background:#e9e7de;border:1px solid #fff3;box-shadow:0 8px 24px #26312414}
+.jm-business-card .photo-composition .portrait{position:static;display:block;width:100%;max-width:100%;height:auto;max-height:none;object-fit:contain;border-radius:inherit}
+.jm-business-card .art-gallery{align-items:stretch;gap:12px}
+.jm-business-card .art-photo{padding:6px;min-width:0;border:1px solid #e2ded2;border-radius:20px;background:#f2eee5;overflow:hidden;box-shadow:0 3px 12px #46513f08}
+.jm-business-card .art-photo img{display:block;width:100%;max-width:100%;height:auto;max-height:none;aspect-ratio:4 / 5;object-fit:contain;object-position:center;border-radius:14px;background:#f2eee5}
+.jm-business-card .artist-signature{margin-top:22px}
+.jm-business-card .artist-signature img{display:block;flex-shrink:0;max-width:100%}
+.jm-business-card .viewer-image{max-width:100%;height:60vh;height:60dvh;max-height:calc(90vh - 156px);max-height:calc(90dvh - 156px);object-fit:contain;border-radius:18px}
+@media(hover:hover) and (pointer:fine){
+.jm-business-card .art-photo:hover{box-shadow:0 6px 18px #46513f12}
+.jm-business-card .art-photo:hover img{transform:none}
+}
+/* Duas colunas confortáveis também em notebooks menores. */
+@container(min-width:761px) and (max-width:1000px){
+.jm-business-card .card{gap:12px;padding:12px}
+.jm-business-card .identity{padding:20px}
+.jm-business-card .details{padding:26px 16px 14px}
+.jm-business-card .brand{column-gap:12px}
+.jm-business-card .brand h1{font-size:28px}
+.jm-business-card h2{font-size:31px}
+}
+@media(max-width:760px){
+.jm-business-card .jm-layout{padding:14px 10px 4px}
+.jm-business-card .card{gap:0;padding:10px;border-radius:28px}
+.jm-business-card .identity{padding:22px 18px 20px;border-radius:21px}
+.jm-business-card .photo-composition{height:auto;min-height:0;border-radius:20px}
+.jm-business-card .details{padding:28px 12px 12px}
+.jm-business-card .art-gallery{gap:10px}
+.jm-business-card .art-photo{padding:5px;border-radius:17px}
+.jm-business-card .art-photo img{height:auto;border-radius:12px}
+.jm-business-card .artist-signature{margin-top:18px}
+}
+@container(max-width:760px){
+.jm-business-card .jm-layout{padding:14px 10px 4px}
+.jm-business-card .card{gap:0;padding:10px;border-radius:28px}
+.jm-business-card .identity{padding:22px 18px 20px;border-radius:21px}
+.jm-business-card .photo-composition{height:auto;min-height:0;border-radius:20px}
+.jm-business-card .details{padding:28px 12px 12px}
+.jm-business-card .art-gallery{gap:10px}
+.jm-business-card .art-photo{padding:5px;border-radius:17px}
+.jm-business-card .art-photo img{height:auto;border-radius:12px}
+.jm-business-card .artist-signature{margin-top:18px}
+}
+@container(max-width:360px){
+.jm-business-card .identity{padding:20px 12px 18px}
+.jm-business-card .details{padding-left:6px;padding-right:6px}
+.jm-business-card .art-gallery{gap:8px}
+.jm-business-card .art-photo{padding:4px;border-radius:15px}
+.jm-business-card .art-photo img{border-radius:10px}
+}
+
+/* Arredondamento no contorno da própria fotografia, sem faixas internas. */
+.jm-business-card .art-gallery{align-items:start}
+.jm-business-card .art-photo img{height:auto;aspect-ratio:auto;border-radius:16px;overflow:hidden}
+.jm-business-card .photo-composition .portrait{border-radius:22px}
+.jm-business-card .artist-signature img{border-radius:50%}
+@media(max-width:760px){
+.jm-business-card .art-photo img{border-radius:13px}
+.jm-business-card .photo-composition .portrait{border-radius:20px}
+}
+@container(max-width:760px){
+.jm-business-card .art-photo img{border-radius:13px}
+.jm-business-card .photo-composition .portrait{border-radius:20px}
+}
+
+/* Foto ampliada: cantos na imagem real e espaço reservado aos controles. */
+.jm-business-card .art-viewer{padding:20px;border-radius:28px;border-color:#ffffff80;background:#faf8f3;box-shadow:0 24px 80px #18241540;overflow:auto}
+.jm-business-card .art-viewer::backdrop{background:#263124bf;backdrop-filter:blur(8px)}
+.jm-business-card .art-viewer .viewer-image{display:block;width:auto;height:auto;max-width:100%;max-height:calc(90vh - 174px);max-height:calc(90dvh - 174px);margin:0 auto;object-fit:contain;border-radius:20px;background:transparent;box-shadow:0 6px 22px #26312418}
+.jm-business-card .viewer-top{margin-bottom:16px}
+.jm-business-card .viewer-controls{padding-top:16px}
+.jm-business-card .viewer-close,.jm-business-card .viewer-prev,.jm-business-card .viewer-next{flex-shrink:0;transition:background .2s,border-color .2s}
+@media(hover:hover) and (pointer:fine){
+.jm-business-card .viewer-close:hover,.jm-business-card .viewer-prev:hover,.jm-business-card .viewer-next:hover{background:#e2e7d9;border-color:#b7c0aa}
+}
+@media(max-width:760px){
+.jm-business-card .art-viewer{padding:14px;border-radius:24px}
+.jm-business-card .viewer-top{font-size:16px;margin-bottom:12px}
+.jm-business-card .viewer-controls{padding-top:12px}
+.jm-business-card .art-viewer .viewer-image{border-radius:16px;max-height:calc(90vh - 154px);max-height:calc(90dvh - 154px)}
+}
+
+/* Última dupla com o mesmo enquadramento; originais preservados na ampliação. */
+.jm-business-card .art-photo:nth-child(3) img,
+.jm-business-card .art-photo:nth-child(4) img{width:100%;height:auto;aspect-ratio:2160 / 3840;object-fit:cover;object-position:center}
+
+/* Acabamento: respiro uniforme, leitura confortável e controles estáveis. */
+.jm-business-card .details{justify-content:flex-start}
+.jm-business-card .intro{max-width:34ch}
+.jm-business-card .art-section{margin-bottom:26px}
+.jm-business-card .art-photo{transition:border-color .2s ease,box-shadow .2s ease}
+.jm-business-card .artist-signature p{min-width:0;text-wrap:balance}
+.jm-business-card .contact-text{flex:1}
+.jm-business-card .contact .arrow{flex-shrink:0}
+.jm-business-card .viewer-count{min-width:5ch;text-align:center;font-variant-numeric:tabular-nums}
+.jm-business-card .viewer-top>span{min-width:0;text-wrap:balance}
+.jm-business-card .art-viewer{scrollbar-width:thin;scrollbar-color:#b7c0aa transparent}
+@media(min-width:761px){
+.jm-business-card .jm-layout{padding-top:32px;padding-bottom:16px}
+}
+@container(min-width:761px){
+.jm-business-card .details{padding-top:26px}
+.jm-business-card footer{margin-top:auto}
+}
+@media(max-width:760px){
+.jm-business-card .intro{max-width:none;margin-bottom:24px}
+.jm-business-card .art-section{margin-bottom:24px}
+.jm-business-card .contact{min-height:72px}
+.jm-business-card .availability{line-height:1.8}
+}
+@container(max-width:760px){
+.jm-business-card .intro{max-width:none;margin-bottom:24px}
+.jm-business-card .art-section{margin-bottom:24px}
+.jm-business-card .contact{min-height:72px}
+.jm-business-card .availability{line-height:1.8}
+}
+@media(prefers-reduced-motion:reduce){
+.jm-business-card .art-photo,.jm-business-card .viewer-close,.jm-business-card .viewer-prev,.jm-business-card .viewer-next{transition:none}
+}
 </style>
 <div class="jm-business-card" lang="pt-BR">
   <div class="jm-layout">
@@ -307,17 +430,17 @@
         <p class="intro">Design e arte criando espaços que acolhem.</p>
         <section class="art-section" aria-label="Artes e processo criativo">
           <div class="art-gallery">
-            <a class="art-photo" href="https://mapin360.com/wp-content/uploads/2026/09/juliana9-scaled.jpeg" data-jm-art="" aria-label="Ampliar: Pintura abstrata em tons claros, com detalhes terrosos">
-              <img src="https://mapin360.com/wp-content/uploads/2026/09/julianamercia4-scaled.jpeg" width="1280" height="1924" alt="Pintura abstrata em tons claros, com detalhes terrosos" decoding="async" loading="lazy">
+            <a class="art-photo" href="https://julianamercia.com.br/wp-content/uploads/2026/09/192_Juliana-Mercia-Julho-25-103.jpg-scaled.jpeg" data-jm-art="" aria-label="Ampliar: Pintura abstrata em tons claros, com detalhes terrosos">
+              <img src="https://julianamercia.com.br/wp-content/uploads/2026/09/192_Juliana-Mercia-Julho-25-103.jpg-scaled.jpeg" width="1280" height="1924" alt="Pintura abstrata em tons claros, com detalhes terrosos" decoding="async" loading="lazy">
             </a>
-            <a class="art-photo" href="assets/juliana-com-obras.jpg" data-jm-art="" aria-label="Ampliar: Juliana Mércia junto a duas pinturas no ateliê">
+            <a class="art-photo" href="https://mapin360.com/wp-content/uploads/2026/09/juliana10-scaled.jpeg" data-jm-art="" aria-label="Ampliar: Juliana Mércia junto a duas pinturas no ateliê">
               <img src="https://mapin360.com/wp-content/uploads/2026/09/juliana10-scaled.jpeg" width="1280" height="1924" alt="Juliana Mércia junto a duas pinturas no ateliê" decoding="async" loading="lazy">
             </a>
-            <a class="art-photo" href="assets/gesto-pincelada.jpg" data-jm-art="" aria-label="Ampliar: Mão de Juliana com um pincel sobre a tela">
+            <a class="art-photo" href="https://mapin360.com/wp-content/uploads/2026/09/juliana12-scaled.jpeg" data-jm-art="" aria-label="Ampliar: Mão de Juliana com um pincel sobre a tela">
               <img src="https://mapin360.com/wp-content/uploads/2026/09/juliana12-scaled.jpeg" width="1280" height="1924" alt="Mão de Juliana com um pincel sobre a tela" decoding="async" loading="lazy">
             </a>
-            <a class="art-photo" href="assets/paleta-espátula.jpg" data-jm-art="" aria-label="Ampliar: Mãos segurando uma paleta de tintas e uma espátula sob luz natural">
-              <img src="https://mapin360.com/wp-content/uploads/2026/09/julianamercia6-scaled.jpeg" width="1280" height="1924" alt="Mãos segurando uma paleta de tintas e uma espátula sob luz natural" decoding="async" loading="lazy">
+            <a class="art-photo" href="https://julianamercia.com.br/wp-content/uploads/2026/09/166_IMG_7421.JPG-scaled.jpeg" data-jm-art="" aria-label="Ampliar: Mãos segurando uma paleta de tintas e uma espátula sob luz natural">
+              <img src="https://julianamercia.com.br/wp-content/uploads/2026/09/166_IMG_7421.JPG-scaled.jpeg" width="1280" height="1924" alt="Mãos segurando uma paleta de tintas e uma espátula sob luz natural" decoding="async" loading="lazy">
             </a>
           </div>
         </section>
